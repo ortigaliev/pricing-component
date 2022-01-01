@@ -42,7 +42,7 @@ body{
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: ;
+  background-color: var(--bg-color);
   color: var();
 }
 
@@ -269,6 +269,12 @@ margin-top: 32px;
   border-radius: 6px;
 }
 
+.btn:hover{
+  background-color: #fff;
+  color: #6d72de;
+  border: 1px solid #6d72de
+}
+
 .price-plan-item-bigger{
   width: 350px;
   height: 501px;
@@ -281,6 +287,12 @@ margin-top: 32px;
 .price-plan-item-bigger .btn{
   background-color: #fff;
   color: #6d72de;
+}
+
+.price-plan-item-bigger .btn:hover{
+  background-color: var(--item-bg-color);
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 
