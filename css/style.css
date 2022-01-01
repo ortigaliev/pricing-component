@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'Montserrat';
   src: url('fonts/Montserrat-Bold.woff2') format('woff2'),
-      url('fonts/Montserrat-Bold.woff') format('woff');
+  url('fonts/Montserrat-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -10,12 +10,12 @@
 
 /* Custom Prop */
 :root{
---bg-color: #d0d5f6;
---card-bg: #fff;
---item-bg-color: #a2a7f0;
---text-color: #6e728e;
---font-family: "Montserrat", "Arial", sans-serif;
---price-text-color: #4a4d60;
+  --bg-color: #d0d5f6;
+  --card-bg: #fff;
+  --item-bg-color: #a2a7f0;
+  --text-color: #6e728e;
+  --font-family: "Montserrat", "Arial", sans-serif;
+  --price-text-color: #4a4d60;
 }
 
 /* GLOBAL STYLES */
@@ -35,13 +35,14 @@ html{
 body{
   display: flex;
   flex-direction: column;
+  position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: var(--bg-color);
+  background-color: ;
   color: var();
 }
 
@@ -69,7 +70,7 @@ img{
 .toggler-box {
   width: 240px;
   height: 111px;
-  margin: 70px auto;
+  margin: 70px auto 0px auto;
   align-items: center;
 }
 .toggler-title {
@@ -125,7 +126,7 @@ img{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--item-bg-color);
   transition: .4s;
 }
 
@@ -166,5 +167,129 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.round {
+
+/* PRICEING-PLAN-SECTION */
+
+.price-plan-section {
+  width: 100%;
+  max-width: 1050px;
+  height: 501px;
+  margin: 64px auto;
+}
+.price-plan-wrapper {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+}
+.price-plan-item {
+  width: 350px;
+  height: 453px;
+  padding: 31px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+
+
+.price-plan-title {
+  padding: 0;
+  padding-bottom: 24px;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+
+}
+.price-plan-pricing {
+  padding: 0;
+  padding-bottom: 32px;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 72px;
+  line-height: 71px;
+  font-weight: 700;
+  color: var(--price-text-color);
+  text-align: center;
+}
+.price-plan-currency {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-family: var(--font-family);
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  color: var(--price-text-color);
+  text-align: center;
+}
+
+.pricing-rules{
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  border-top: 1px solid #6E728E;
+}
+
+.big{
+  color: #fff;
+}
+
+
+.price-plan-send-storage{
+  border-bottom: 1px solid #6E728E;
+}
+
+.button-wrapper{
+margin-top: 32px;
+}
+.btn {
+  display: inline-block;
+  width: 288px;
+  height: 44px;
+  padding: 14px 66px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  font-family: var(--font-family);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--item-bg-color);
+  border-radius: 6px;
+}
+
+.price-plan-item-bigger{
+  width: 350px;
+  height: 501px;
+  padding: 55px 31px;
+  background-color: var(--item-bg-color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.price-plan-item-bigger .btn{
+  background-color: #fff;
+  color: #6d72de;
+}
+
+
+/* BG-IMG */
+.bg-img {
+  position: absolute;
+  width: 471px;
+  height: 759px;
+  top: -10;
+  right: 0;
+  z-index: -1;
 }
