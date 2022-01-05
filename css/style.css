@@ -43,7 +43,11 @@ body{
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
   background-color: var(--bg-color);
-  color: var();
+  background-image: url(../img/Group-10.png),
+                     url(../img/bg-img-left.svg);
+  background-position: right -100px top -100px,
+                      left -120px bottom -450px;
+  background-repeat: no-repeat;
 }
 
 img{
